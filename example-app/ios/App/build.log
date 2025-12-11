@@ -1,0 +1,131 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace App.xcworkspace -scheme App -destination "platform=iOS Simulator,id=1E84CE23-3AF2-41D0-9491-8FA335A84A13" build
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (7 targets)
+    Target 'App' in project 'App'
+        ➜ Implicit dependency on target 'Pods-App' in project 'Pods' via file 'Pods_App.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'Capacitor' in project 'Pods' via options '-framework Capacitor' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'CapacitorCamera' in project 'Pods' via options '-framework CapacitorCamera' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'CapacitorPluginCactus' in project 'Pods' via options '-framework CapacitorPluginCactus' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'CapacitorSplashScreen' in project 'Pods' via options '-framework CapacitorSplashScreen' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'CapacitorCordova' in project 'Pods' via options '-framework Cordova' in build setting 'OTHER_LDFLAGS'
+    Target 'Pods-App' in project 'Pods'
+        ➜ Explicit dependency on target 'Capacitor' in project 'Pods'
+        ➜ Explicit dependency on target 'CapacitorCamera' in project 'Pods'
+        ➜ Explicit dependency on target 'CapacitorCordova' in project 'Pods'
+        ➜ Explicit dependency on target 'CapacitorPluginCactus' in project 'Pods'
+        ➜ Explicit dependency on target 'CapacitorSplashScreen' in project 'Pods'
+    Target 'CapacitorSplashScreen' in project 'Pods'
+        ➜ Explicit dependency on target 'Capacitor' in project 'Pods'
+    Target 'CapacitorPluginCactus' in project 'Pods'
+        ➜ Explicit dependency on target 'Capacitor' in project 'Pods'
+    Target 'CapacitorCamera' in project 'Pods'
+        ➜ Explicit dependency on target 'Capacitor' in project 'Pods'
+    Target 'Capacitor' in project 'Pods'
+        ➜ Explicit dependency on target 'CapacitorCordova' in project 'Pods'
+    Target 'CapacitorCordova' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/App/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 3639ba562a92792ab2aa58c0b46ab4f5
+Build description path: /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/XCBuildData/3639ba562a92792ab2aa58c0b46ab4f5.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk /Users/shileipeng/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.1-23B77-90cf18a4295e390e64c810bc6bd7acbc.sdkstatcache
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk -o /Users/shileipeng/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.1-23B77-90cf18a4295e390e64c810bc6bd7acbc.sdkstatcache
+
+ProcessInfoPlistFile /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorCordova/Cordova.framework/Info.plist /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorCordova/CapacitorCordova-Info.plist (in target 'CapacitorCordova' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    builtin-infoPlistUtility /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorCordova/CapacitorCordova-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorCordova/Cordova.framework/Info.plist
+
+ProcessInfoPlistFile /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/Capacitor/Capacitor.framework/Info.plist /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/Capacitor/Capacitor-Info.plist (in target 'Capacitor' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    builtin-infoPlistUtility /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/Capacitor/Capacitor-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/Capacitor/Capacitor.framework/Info.plist
+
+warning: Run script build phase '[CP] Copy XCFrameworks' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'CapacitorPluginCactus' from project 'Pods')
+PhaseScriptExecution [CP]\ Copy\ XCFrameworks /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Script-B9F396D8CDA5B8C835C70B6593AE6578.sh (in target 'CapacitorPluginCactus' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    /bin/sh -c /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Script-B9F396D8CDA5B8C835C70B6593AE6578.sh
+Selected xcframework slice ios-arm64-simulator
+rsync --delete -av --filter P .*.?????? --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" "/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/../../../../ios/External/swift-cactus/bin/CXXCactusDarwin.xcframework/ios-arm64-simulator/*" "/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/CapacitorPluginCactus"
+Transfer starting: 9 files
+
+sent 703 bytes  received 20 bytes  657272 bytes/sec
+total size is 1828812  speedup is 2529.47
+Copied /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/../../../../ios/External/swift-cactus/bin/CXXCactusDarwin.xcframework/ios-arm64-simulator to /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/CapacitorPluginCactus
+Selected xcframework slice ios-arm64-simulator
+rsync --delete -av --filter P .*.?????? --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" "/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/../../../../ios/External/swift-cactus/bin/cactus_util.xcframework/ios-arm64-simulator/*" "/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/CapacitorPluginCactus"
+Transfer starting: 11 files
+
+sent 789 bytes  received 20 bytes  735454 bytes/sec
+total size is 2260738  speedup is 2794.48
+Copied /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/../../../../ios/External/swift-cactus/bin/cactus_util.xcframework/ios-arm64-simulator to /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/CapacitorPluginCactus
+
+ProcessInfoPlistFile /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorSplashScreen/CapacitorSplashScreen.framework/Info.plist /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorSplashScreen/CapacitorSplashScreen-Info.plist (in target 'CapacitorSplashScreen' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    builtin-infoPlistUtility /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorSplashScreen/CapacitorSplashScreen-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorSplashScreen/CapacitorSplashScreen.framework/Info.plist
+
+ProcessInfoPlistFile /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorPluginCactus/CapacitorPluginCactus.framework/Info.plist /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorPluginCactus/CapacitorPluginCactus-Info.plist (in target 'CapacitorPluginCactus' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    builtin-infoPlistUtility /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods/Target\ Support\ Files/CapacitorPluginCactus/CapacitorPluginCactus-Info.plist -producttype com.apple.product-type.framework -expandbuildsettings -format binary -platform iphonesimulator -o /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorPluginCactus/CapacitorPluginCactus.framework/Info.plist
+
+SwiftDriver CapacitorPluginCactus normal arm64 com.apple.xcode.tools.swift.compiler (in target 'CapacitorPluginCactus' from project 'Pods')
+    cd /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name CapacitorPluginCactus -Onone -enforce-exclusivity\=checked @/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Objects-normal/arm64/CapacitorPluginCactus.SwiftFileList -DDEBUG -D COCOAPODS -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.1.sdk -target arm64-apple-ios14.0-simulator -g -module-cache-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorPluginCactus -F /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorPluginCactus -F /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/Capacitor -F /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorCordova -F /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/bin -F /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/CapacitorPluginCactus -c -j12 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/shileipeng/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator26.1-23B77-90cf18a4295e390e64c810bc6bd7acbc.sdkstatcache -output-file-map /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Objects-normal/arm64/CapacitorPluginCactus-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -sdk-module-cache-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Objects-normal/arm64/CapacitorPluginCactus.swiftmodule -validate-clang-modules-once -clang-build-session-file /Users/shileipeng/Library/Developer/Xcode/DerivedData/ModuleCache.noindex/Session.modulevalidation -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Objects-normal/arm64/CapacitorPluginCactus_const_extract_protocols.json -Xcc -iquote -Xcc /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/CapacitorPluginCactus-generated-files.hmap -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/CapacitorPluginCactus-own-target-headers.hmap -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/CapacitorPluginCactus-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-8699adb1dd336b26511df848a716bd42-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/CapacitorPluginCactus-project-headers.hmap -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Products/Debug-iphonesimulator/CapacitorPluginCactus/include -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/DerivedSources-normal/arm64 -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/DerivedSources/arm64 -Xcc -I/Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/DerivedSources -Xcc -DPOD_CONFIGURATION_DEBUG\=1 -Xcc -DDEBUG\=1 -Xcc -DCOCOAPODS\=1 -emit-objc-header -emit-objc-header-path /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/Objects-normal/arm64/CapacitorPluginCactus-Swift.h -import-underlying-module -Xcc -ivfsoverlay -Xcc /Users/shileipeng/Library/Developer/Xcode/DerivedData/App-farrunwdrcdutkevaklqnxssmlvu/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginCactus.build/unextended-module-overlay.yaml -working-directory /Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/example-app/ios/App/Pods -experimental-emit-module-separately -disable-cmo
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/Sources/CactusPlugin/CactusCap.swift:2:8: error: Unable to find module dependency: 'Cactus'
+import Cactus
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/Sources/CactusPlugin/CactusCap.swift:2:8: note: A dependency of main module 'CapacitorPluginCactus'
+import Cactus
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/LanguageModel/CactusLanguageModel.swift:1:8: error: Unable to find module dependency: 'CXXCactusShims'
+import CXXCactusShims
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/LanguageModel/CactusLanguageModel.swift:1:8: note: A dependency of main module 'CapacitorPluginCactus'
+import CXXCactusShims
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/LanguageModel/CactusLanguageModel+Downloading.swift:2:8: error: Unable to find module dependency: 'Zip'
+import Zip
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/LanguageModel/CactusLanguageModel+Downloading.swift:2:8: note: A dependency of main module 'CapacitorPluginCactus'
+import Zip
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/Telemetry/CactusTelemetry.swift:1:8: error: Unable to find module dependency: 'Logging'
+import Logging
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+/Users/shileipeng/Documents/react_native/capacitor_plugin/capacitor-plugin-cactus/ios/External/swift-cactus/Sources/Cactus/Telemetry/CactusTelemetry.swift:1:8: note: A dependency of main module 'CapacitorPluginCactus'
+import Logging
+       ^ (in target 'CapacitorPluginCactus' from project 'Pods')
+
+warning: Run script build phase '[CP] Embed Pods Frameworks' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'App' from project 'App')

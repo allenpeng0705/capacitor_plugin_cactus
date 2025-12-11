@@ -1,0 +1,15 @@
+{
+  "originHash" : "fce301b849f59280782df6929e94e2cff287321ed6f2e500199336d5be70a9c1",
+  "pins" : [
+    {
+      "identity" : "zip",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vapor-community/Zip.git",
+      "state" : {
+        "revision" : "6cf23016de581f1797842cbed799ef33a952bcf4",
+        "version" : "2.2.7"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,51 @@
+PODS:
+  - Capacitor (7.0.0):
+    - CapacitorCordova
+  - CapacitorCamera (7.0.2):
+    - Capacitor
+  - CapacitorCordova (7.0.0)
+  - CapacitorPluginCactus (0.0.1):
+    - Capacitor
+    - swift-log (~> 1.5.4)
+    - Zip (~> 2.1.2)
+  - CapacitorSplashScreen (7.0.3):
+    - Capacitor
+  - swift-log (1.5.4)
+  - Zip (2.1.2)
+
+DEPENDENCIES:
+  - "Capacitor (from `../../node_modules/@capacitor/ios`)"
+  - "CapacitorCamera (from `../../node_modules/@capacitor/camera`)"
+  - "CapacitorCordova (from `../../node_modules/@capacitor/ios`)"
+  - CapacitorPluginCactus (from `../../..`)
+  - "CapacitorSplashScreen (from `../../node_modules/@capacitor/splash-screen`)"
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - swift-log
+    - Zip
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorCamera:
+    :path: "../../node_modules/@capacitor/camera"
+  CapacitorCordova:
+    :path: "../../node_modules/@capacitor/ios"
+  CapacitorPluginCactus:
+    :path: "../../.."
+  CapacitorSplashScreen:
+    :path: "../../node_modules/@capacitor/splash-screen"
+
+SPEC CHECKSUMS:
+  Capacitor: fcbee427ff437f414bbb3bc2d39364ad9bd2b8a5
+  CapacitorCamera: 6e18d54c8ab30d7dc7b8cd93d96f9b4f57e9202a
+  CapacitorCordova: 345f93b7edd121db98e4ec20ac94d6d7bcaf7e48
+  CapacitorPluginCactus: 7990875794a878f478e1caaa0702cda849c70dcd
+  CapacitorSplashScreen: d06ae8804808e9f649a08e7bb7f283c77b688084
+  swift-log: 6f2a575b7a8164de6ac6f66f6850436dfec59c8b
+  Zip: b3fef584b147b6e582b2256a9815c897d60ddc67
+
+PODFILE CHECKSUM: bb3b9bce7341c78cb42bde5f73483e1e7b43c62b
+
+COCOAPODS: 1.16.2

@@ -1,0 +1,11 @@
+// Swift-only module definition for CXXCactusShims
+framework module CXXCactusShims {
+    // Re-export CXXCactusDarwin for iOS
+    @_exported import CXXCactusDarwin
+}
+
+// Also define a plain module for when not building as a framework
+module CXXCactusShims {
+    // Re-export CXXCactusDarwin for iOS
+    @_exported import CXXCactusDarwin
+}

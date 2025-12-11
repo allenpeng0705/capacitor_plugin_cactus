@@ -1,0 +1,21 @@
+# pack-refs with: peeled fully-peeled sorted 
+e077eaa7d02495fb22a781d6f09f7a457b033b48 refs/heads/canimport-macros
+27da6c93688ccdb433b594659344c8204fbb5771 refs/heads/main
+36681dc33469abf511c28dc43314da54f9e69b7f refs/heads/operation-analytics
+2a609190630d888a9da8ab32e74e707226d64667 refs/heads/operation-request
+36681dc33469abf511c28dc43314da54f9e69b7f refs/pull/1/head
+592177ca3d96fe4b09becca11e3f03c694f0a494 refs/pull/1/merge
+1000c2516ce3b76df446e28950318092fe9cc978 refs/pull/3/head
+de33003113c673d79ee3aaa6e7ed21b5e6aa40f3 refs/pull/4/head
+8eee6bbf6166bbbeb0060ff38a54e7415e7c3134 refs/pull/5/head
+c3e2c03395f8ea373f0c62863d6e76ab45dbbc9b refs/pull/6/head
+e077eaa7d02495fb22a781d6f09f7a457b033b48 refs/pull/7/head
+fbc2c53fec4d3dde63f863270dd3d268a7eb2003 refs/pull/7/merge
+6e0d95623235376bd2e20d23292beca9864dd3b6 refs/pull/8/head
+2dbf82501c63efa9b189b9a4420123fce16c523f refs/pull/9/head
+d50b3088e79c1d37e0b6ca8127b9dcee8360c2f5 refs/tags/0.1.0
+2d67288b5a30c89cd3776bec89ec5bc38bae79ef refs/tags/0.2.0
+b79f8fad88f09fdeaf25f01cf9c850842b3dbf3d refs/tags/0.3.0
+0daa03663cd390c7b455f52fb1e3c26b6c5ee8f7 refs/tags/0.3.1
+d7d632b85b0bf944ff525dd73309499bab327c05 refs/tags/0.3.2
+27da6c93688ccdb433b594659344c8204fbb5771 refs/tags/0.3.3

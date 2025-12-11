@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "sdk": "iphonesimulator",
+  "platform": "ios-simulator",
+  "arch": "x86_64"
+}

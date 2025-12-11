@@ -1,0 +1,10 @@
+framework module Cactus {
+    umbrella header "Cactus.h"
+    export *
+    module * { export * }
+    
+    // Re-export dependencies
+    @_exported import CXXCactusDarwin
+    @_exported import Logging
+    @_exported import Zip
+}

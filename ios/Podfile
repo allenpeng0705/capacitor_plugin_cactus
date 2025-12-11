@@ -1,0 +1,13 @@
+platform :ios, '14.0'
+
+# Capacitor plugin pods
+pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
+pod 'Cordova', :path => '../../node_modules/@capacitor/ios'
+
+# Cactus framework pods
+pod 'CapacitorPluginCactus', :path => '../'
+
+# Third-party dependencies
+pod 'Zip', '~> 2.2.7'
+pod 'swift-log', '~> 1.6.4'
+pod 'swift-crypto', '~> 4.0.0'

@@ -1,0 +1,27 @@
+name: SwiftCactusiOSApp
+options:
+  createIntermediateGroups: true
+  indentWidth: 2
+  tabWidth: 2
+  bundleIdPrefix: com.cactus
+targets:
+  SwiftCactusiOSApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources: [Sources/SwiftCactusiOSApp]
+    settings:
+      base: &base_settings
+        SWIFT_VERSION: "5.9"
+        SWIFT_STRICT_CONCURRENCY: "complete"
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
+    dependencies:
+      - product: Cactus
+        package: swift-cactus
+    files:
+      - path: Sources/SwiftCactusiOSApp
+        includes:
+          - "*.swift"
+packages:
+  swift-cactus:
+    path: ../swift-cactus
